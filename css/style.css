@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -119,6 +123,7 @@ header p {
   margin-bottom: 0.75rem;
   padding-bottom: 0.35rem;
   border-bottom: 2px solid #f0f2f6;
+  scroll-margin-top: 20px;
 }
 
 .document h3 {
@@ -156,6 +161,132 @@ header p {
   border: none;
   border-top: 1px solid #eef0f4;
   margin: 1.5rem 0;
+}
+
+/* ===== Breadcrumb ===== */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.breadcrumb a {
+  color: #0f3460;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb a:hover {
+  color: #e94560;
+}
+
+.breadcrumb span:last-child {
+  color: #9ca3af;
+}
+
+/* ===== Índice da página ===== */
+.toc {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #eef0f4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.toc h2 {
+  font-size: 1.1rem;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+}
+
+.toc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc li {
+  margin-bottom: 0.6rem;
+}
+
+.toc li:last-child {
+  margin-bottom: 0;
+}
+
+.toc a {
+  color: #0f3460;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.toc a:hover {
+  color: #e94560;
+}
+
+/* ===== Destaques importantes ===== */
+.highlight {
+  background: #fff5f6;
+  border-left: 4px solid #e94560;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  color: #374151;
+}
+
+.highlight strong {
+  color: #e94560;
+}
+
+/* ===== Navegação entre páginas ===== */
+.related-pages {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.related-pages a {
+  display: inline-block;
+  padding: 0.85rem 1.2rem;
+  background: #0f3460;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.related-pages a:hover {
+  background: #e94560;
+  transform: translateY(-2px);
+}
+
+/* ===== Botão voltar ao topo ===== */
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 52px;
+  height: 52px;
+  background: #e94560;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  box-shadow: 0 4px 14px rgba(233, 69, 96, 0.35);
+  transition: all 0.2s ease;
+  z-index: 999;
+}
+
+.back-to-top:hover {
+  transform: translateY(-3px);
+  background: #d63552;
 }
 
 /* ===== Contact ===== */
@@ -255,5 +386,20 @@ footer {
 
   .container {
     padding: 1.25rem 1rem;
+  }
+
+  .toc {
+    padding: 1.25rem;
+  }
+
+  .toc a {
+    font-size: 0.9rem;
+  }
+
+  .back-to-top {
+    width: 46px;
+    height: 46px;
+    right: 15px;
+    bottom: 15px;
   }
 }
