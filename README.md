@@ -1,6 +1,6 @@
-# PRF ADM: Quiz e Simulados — Documentos Legais
+# Correios Atendente Simulados — Documentos Legais
 
-Este repositório hospeda os documentos legais do aplicativo **PRF ADM: Quiz e Simulados**, disponível na Google Play.
+Este repositório hospeda os documentos legais do aplicativo **Correios Atendente Simulados**, disponível na Google Play.
 
 ## Páginas
 
